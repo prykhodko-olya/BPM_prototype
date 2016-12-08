@@ -1,0 +1,27 @@
+[
+  {"login": "admin", "password": "admin"},
+  {
+    "id" : 21 ,
+    "name" : "User A" ,
+    "login" : "user_a" ,
+    "password" : "admin" ,
+    "department" : "accounting" ,
+    "role" : "head"
+  },
+  {
+    "id" : 22,
+    "name" : "User  B" ,
+    "login" : "user_b" ,
+    "password" : "admin" ,
+    "department" : "accounting" ,
+    "role" : "employee"
+  },
+  {
+    "id" :23,
+    "name " : "User  C" ,
+    "login" : "user_c" ,
+    "password" : "admin" ,
+    "department" : "HR" ,
+    "role" : "employee"
+  }
+]

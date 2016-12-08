@@ -1,0 +1,27 @@
+[
+  {
+    "id" : 61,
+    "domain" : 1,
+    "user" : 0,
+    "role" : "head",
+    "department" : "accounting",
+    "referenceTemplate" : 1481097215176
+  },
+  {
+    "id" : 62,
+    "domain": 1,
+    "user": 0,
+    "role": "employee",
+    "department": "accounting",
+    "referenceTemplate": 1481097095073
+  },
+  {
+    "id" : 63,
+    "domain": 1,
+    "user": 0,
+    "role": "employee",
+    "department": "HR",
+    "referenceTemplate":1481097349742
+  }
+
+]
