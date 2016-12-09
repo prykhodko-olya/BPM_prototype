@@ -76,19 +76,22 @@ const ActionStep = React.createClass({
     }
 
     if (nextProps.setupRecommendStep) {
-
-      this.resetState();
-
-      nextProps.recommendedStepActions.forEach((el)=> {
-        state.actions.push(el);
-      });
+      var actions = [];
 
       this.setState({
-        actions: state.actions
-      }, () => {
-        setTimeout(()=> {
-          this.sendState();
-        }, 200);
+        actions: []
+      }, ()=> {
+        nextProps.recommendedStepActions.forEach((el)=> {
+          actions.push(el);
+        });
+
+        this.setState({
+          actions: actions
+        }, () => {
+          setTimeout(()=> {
+            this.sendState();
+          }, 200);
+        });
       });
     }
 

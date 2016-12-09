@@ -90,9 +90,20 @@ const Step = React.createClass({
     var state = Object.assign({}, this.state);
     state.recommendations.actions = [];
 
+    state.steps.push(state.currentStep);
+
+    //reset currentStep
+    state.currentStep = {
+      id: Date.now(),
+      title: '',
+      actions: []
+    };
+
     this.setState({
       setupStep: true,
       recommendationsStep: ++this.state.recommendationsStep,
+      currentStep: state.currentStep,
+      steps: state.steps
     });
 
     //prevent next step to setup
